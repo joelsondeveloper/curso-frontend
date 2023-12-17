@@ -23,3 +23,110 @@ p {
     background-color: purple;
     color: orangered;
 }
+
+/*ordem das regras*/
+h2{
+    border-bottom: 2px solid red;
+}
+.titulo{
+    border-bottom: 3px solid blue;
+}
+
+#algumtitulo {
+    border-bottom: 4px solid green;
+}
+
+/*nome de cores*/
+.color-name{
+    color: rgb(177, 52, 52);
+}
+
+/*hex*/
+.hex{
+    color: #ff2244;
+}
+
+/*forma simplificada do hex*/
+.simpleshex {
+    color: #7d3;
+}
+
+/*rgb*/
+.rgb{
+    color: rgb(19, 146, 146);
+}
+.mixed-rgb{
+    color: rgb(199,34,232);
+}
+
+/*rgba*/
+.rgba{
+    color: rgba(100,0,34,0.5)
+}
+
+/*hsl*/
+.hsl{
+    color: hsl(100,20%,34%);
+}
+
+/*background color*/
+.bg{
+    background-color: #000;
+    color: #fff;
+}
+.bg-2{
+    background-color: #678;
+    color: #298567;
+}
+
+/*background opacity*/
+.bg-opac{
+    background-color: green;
+    opacity: 0.2;
+}
+
+/*rgba com opacidade*/
+.rgba-opac{
+    background-color: rgba(240,145,67,0.1);
+    color: #001;
+}
+
+/*imagem com background*/
+.bg-image{
+    background-image: url(../img/city.gif);
+    padding: 100px;
+    color: #fff;
+}
+
+/*centralizar bg imAGE*/
+.nocenter, .center{
+    height: 400px;
+    width: 400px;
+    background-image: url(../img/city.jpg);
+}
+.center{
+    background-position: center;
+    background-size: cover;
+}
+
+/*largura e altura*/
+.hw{
+    height: 100px;
+    width: 100px;
+    background-color: #000;
+}
+.hw2{
+    height: 300px;
+    background-color: #678;
+}
+
+/*padding*/
+.nopad, .pad{
+    background-color: #002;
+    color: #fff;
+}
+.pad{
+    background-color: #003;
+    padding: 20px;
+
+}
