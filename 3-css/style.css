@@ -11,3 +11,15 @@ p {
 
 /*algum comentario*/
 /*outro comentario*/
+
+/*classes*/
+.parag {
+    background-color: black;
+    color: aqua;
+}
+
+/*ids*/
+#title-exclusive {
+    background-color: purple;
+    color: orangered;
+}
