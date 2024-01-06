@@ -230,3 +230,135 @@ h2{
     width: 200px;
     height: 100px;
 }
+
+/*text aligment*/
+.text-aligment{
+    text-align: right;
+}
+.container-center{
+    text-align: center;
+    width: 300px;
+    border: 1px solid #002;
+}
+
+/*text decoration*/
+.underline{
+    text-decoration: underline;
+}
+.line-trough{
+    text-decoration: line-through;
+}
+.remove-underline{
+    text-decoration: none;
+    color: red;
+}
+
+/*text transform*/
+.upper{
+    text-transform: uppercase;
+}
+.lower{
+    text-transform: lowercase;
+}
+
+/*letter spacing*/
+.spacing{
+    letter-spacing: 5px;
+}
+
+/*fontes*/
+.serif{
+    font-family: Georgia;
+}
+.sans-serif{
+    font-family: Helvetica;
+}
+.monospace{
+    font-style: "Courier New";
+}
+.cursive{
+    font-family: cursive;
+}
+.fantasy{
+    font-family: fantasy;
+}
+
+/*estilos das fontes*/
+.italic{
+    font-style: italic;
+}
+.oblique{
+    font-style: oblique;
+}
+
+/*font height*/
+.thin, .bold, .bolder{
+    font-family: helvetica;
+}
+.thin{
+    font-weight: 100;
+}
+.bold{
+    font-weight: 600;
+}
+.bolder{
+    font-weight: 900;
+}
+
+/*font size*/
+.small{
+    font-size: 6px;
+}
+.big{
+    font-size: 75px;
+}
+
+/*dsiplay*/
+.inline-box{
+    width: 50px;
+    height: 50px;
+    background-color: #ff2244;
+    margin: 10px;
+    display: inline-block;
+}
+.block{
+    background-color: #002;
+    display: block;
+    margin: 10px;
+}
+
+/*esconder elementos*/
+.invisible{
+    display: none;
+}
+
+/*positions-static*/
+.static{
+    position: static;
+    background-color: #7d3;
+    color: #fff;
+    height: 100px;
+    width: 100px;
+}
+
+/*relative*/
+.relative{
+    position: relative;
+    background-color: #582;
+    color: #fff;
+    height: 100px;
+    width: 100px;
+    top: 100px;
+    left: 40px;
+}
+
+/*absolute*/
+.absolute{
+    position: absolute;
+    background-color: #7d3;
+    color: #fff;
+    height: 100px;
+    width: 100px;
+    top: 2px;
+    right: 2px;
+}
