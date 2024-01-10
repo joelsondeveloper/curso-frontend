@@ -4,4 +4,10 @@ body {
 
 div {
     margin-bottom: 10px;
+    
+}
+div input,
+div label,
+input {
+    display: block;
 }
