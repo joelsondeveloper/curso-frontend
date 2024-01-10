@@ -80,7 +80,81 @@
             <label for="password">digite a sua senha</label>
             <input type="password" name="password">
         </div>
+        <!-- input radio -->
+        <div>
+            <label for="car_model">escolha o modelo do seu carro</label>
+            <div class="radio">
+                <input type="radio" value="ford" name="car_model">
+                <label for="ford">ford</label>
+            </div>
+            <div class="radio">
+                <input type="radio" value="ferrari" name="car_model">
+                <label for="ferrari">ferrari</label>
+            </div>
+            <div class="radio">
+                <input type="radio" value="buggy" name="car_model">
+                <label for="ford">buggy</label>
+            </div>
+        </div>
+        <!-- input checkpoint -->
+        <div>
+            <label for="optionals">opcionais do carro</label>
+            <div class="radio">
+                <input type="checkbox" name="optionals[]" value="big_tires">
+                <label for="big_tires">pneus grandes</label>
+            </div>
+            <div class="radio">
+                <input type="checkbox" name="optionals[]" value="turbo_engine">
+                <label for="turbo_engine">motor turbo</label>
+            </div>
+            <div class="radio">
+                <input type="checkbox" name="optionals[]" value="hybrid">
+                <label for="hybrid">hibrido</label>
+            </div>
+        </div>
+        <!-- input de data -->
+        <div>
+            <label for="birtday">data de nascimento:</label>
+            <input type="date" >
+        </div>
+        <!-- input para arquivos -->
+        <div>
+            <label for="imagem">insira a sua imagem</label>
+            <input type="file" name="imagem">
+        </div>
+        <!-- input para numeros -->
+        <div>
+            <label for="salary">quanto voce ganha no seu emprego</label>
+            <input type="number" name="salary">
+        </div>
+        <!-- input para emails -->
+        <div>
+            <label for="email">digite o seu email:</label>
+            <input type="email" name="email" id="">
+        </div>
+        <!-- atributo value -->
+        <div>
+            <label for="value">digite algum valor:</label>
+            <input type="text" name="value" value="o seu valor é este">
+        </div>
+        <!-- atributo disabled -->
+        <div>
+            <p>tente mudar o valor:</p>
+            <input type="text" value="não precisa preencher" disabled>
+        </div>
+        <!-- placeholder -->
+        <div>
+            <label for="current">digite sua profissão</label>
+            <input type="text" name="current" placeholder="no que você esta trabalhando agora">
+        </div>
+        <!-- required -->
+        <div>
+            <label for="birtyear">digite seu ano de nascimento</label>
+            <input type="text" name="birtyear" placeholder="digite o ano do seu nascimento" required>
+        </div>
 
+        <!-- resetar form -->
+        <input type="reset" value="limpar">
         <!-- envio de form -->
         <input type="submit" value="enviar"/>
     </form>
