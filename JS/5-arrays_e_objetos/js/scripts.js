@@ -287,68 +287,150 @@
 // console.log(somaInfinita(1, 2, 3, 567, 34, 605, 378, 23, 486))
 
 // for...of
-const somaInfinita2 = (...args) => {
+// const somaInfinita2 = (...args) => {
 
-    let total = 0
+//     let total = 0
 
-    for(num of args) {
-        total += num
-    }
+//     for(num of args) {
+//         total += num
+//     }
 
-    return total
-}
+//     return total
+// }
 
-console.log(somaInfinita2(1, 2, 3))
-console.log(somaInfinita2(1, 2, 3, 567, 34, 605, 378, 23, 486))
+// console.log(somaInfinita2(1, 2, 3))
+// console.log(somaInfinita2(1, 2, 3, 567, 34, 605, 378, 23, 486))
 
-// destruturing
-const userDetails = {
-    firstName: "Joelson",
-    lastName: "Vicente",
-    job: "Progamador"
-}
+// // destruturing
+// const userDetails = {
+//     firstName: "Joelson",
+//     lastName: "Vicente",
+//     job: "Progamador"
+// }
 
-const {firstName, lastName, job} = userDetails
+// const {firstName, lastName, job} = userDetails
 
-console.log(firstName, lastName, job)
+// console.log(firstName, lastName, job)
 
-// renomear variaveis
-const {firstName: primeiroNome } = userDetails
+// // renomear variaveis
+// const {firstName: primeiroNome } = userDetails
 
-console.log(firstName)
+// console.log(firstName)
 
-// destructing com arrays
-const myList = ["avião", "submarino", "carro"]
+// // destructing com arrays
+// const myList = ["avião", "submarino", "carro"]
 
-const [veiculoA, veiculoB, veiculoC] = myList
+// const [veiculoA, veiculoB, veiculoC] = myList
 
-console.log(veiculoA, veiculoB, veiculoC)
+// console.log(veiculoA, veiculoB, veiculoC)
 
-// JSON
-const myJSON = '{"name": "Matheus", "age": 31, "skills": ["PHP", "Javascript", "Python"]}'
+// // JSON
+// const myJSON = '{"name": "Matheus", "age": 31, "skills": ["PHP", "Javascript", "Python"]}'
 
-// JSON para objeto e objeto para JSON
+// // JSON para objeto e objeto para JSON
 
-const myObject = JSON.parse(myJSON)
+// const myObject = JSON.parse(myJSON)
 
-console.log(myObject)
+// console.log(myObject)
 
-console.log(myObject.name)
+// console.log(myObject.name)
 
-console.log(typeof myObject)
+// console.log(typeof myObject)
 
-// json invalido
-const badJson = '{"name": Joelson, "age": 31}'
+// // json invalido
+// const badJson = '{"name": Joelson, "age": 31}'
 
-// const myBadObject = JSON.parse(badJson)
+// // const myBadObject = JSON.parse(badJson)
 
-myObject.isOpenToWork = true
+// myObject.isOpenToWork = true
 
-console.log(myObject)
+// console.log(myObject)
 
-const myNewJson = JSON.stringify(myObject)
+// const myNewJson = JSON.stringify(myObject)
 
-console.log(myNewJson)
+// console.log(myNewJson)
 
-console.log(typeof myNewJson)
+// console.log(typeof myNewJson)
 
+// desafio 1 - mesclar arrays
+// const mesclarArrays = (array1, array2) => {
+
+//     return [...array1, ...array2]
+// }
+
+// console.log(mesclarArrays([42, "Olá, mundo!", true], ["Maçã", 3.14, false]));
+
+// // desafio 2 - filtrar objetos
+// const filtrarObjetos = (array, condicao) => {
+
+//     let condicaoVerdadeira = []
+//     let nota = 0
+
+//     for(let i = 0; i < array.length; i++) {
+
+//         nota = array[i].nota
+        
+//         if(eval(condicao)) {
+
+//             condicaoVerdadeira.push(array[i])
+//         }
+//     }
+
+//     return condicaoVerdadeira
+// }
+
+// const alunos = [
+//     { nome: 'Alice', idade: 25, nota: 8.5 },
+//     { nome: 'Bob', idade: 30, nota: 7.8 },
+//     { nome: 'Charlie', idade: 20, nota: 9.2 },
+//   ]
+
+// console.log(filtrarObjetos(alunos, 'nota > 8'))
+
+// // desafio 3 - encontrar duplicatas
+// const encontrarDuplicatas = (array) => {
+
+//     const arraySort = array.sort()
+//     let arrayDuplicata = [
+
+//     ]
+//     for(let i = 0; i < array.length - 1; i++) {
+
+//         if(arraySort[i] === arraySort[i + 1]) {
+
+//             arrayDuplicata.push(arraySort[i])
+//         }
+//     }
+
+//     return arrayDuplicata
+// }
+
+// console.log(encontrarDuplicatas([1, 2, 3, 4, 5, 2, 7, 8, 3]));
+
+// // desafio 4 - ordenar por propriedade
+// const ordenarPorPropriedade = (array, propriedade) => {
+
+//     const ordenar = parseInt(propriedade)
+//     return array.sort((a, b) => a[propriedade] - b[propriedade])
+// }
+
+// console.log(ordenarPorPropriedade([
+//     { nome: 'Laptop', preco: 1200 },
+//     { nome: 'Smartphone', preco: 800 },
+//     { nome: 'Tablet', preco: 500 },
+// ], 'preco'));
+
+// // desafio 5 - converter para objeto
+// const converterParaObjeto = (chaves, valores) => {
+
+//     const object = {}
+
+//     for(let i = 0; i < chaves.length; i++) {
+
+//         object[chaves[i]] = valores[i]
+//     }
+
+//     return object
+// }
+
+// console.log(converterParaObjeto(['nome', 'idade', 'cidade'], ['Alice', 25, 'São Paulo']));

@@ -185,78 +185,80 @@
 // console.log(joelson.idade)
 
 // symbol
-class Aviao {
-    constructor(marca, turbinas) {
-        this.marca = marca
-        this.turbinas = turbinas
-    }
-}
+// class Aviao {
+//     constructor(marca, turbinas) {
+//         this.marca = marca
+//         this.turbinas = turbinas
+//     }
+// }
 
-const asas = Symbol()
-const pilotos = Symbol()
+// const asas = Symbol()
+// const pilotos = Symbol()
 
-Aviao.prototype[asas] = 2
-Aviao.prototype[pilotos] = 3
+// Aviao.prototype[asas] = 2
+// Aviao.prototype[pilotos] = 3
 
-const boeing = new Aviao("Boeing", 10)
+// const boeing = new Aviao("Boeing", 10)
 
-console.log(boeing)
+// console.log(boeing)
 
-console.log(boeing[asas])
-console.log(boeing[pilotos])
+// console.log(boeing[asas])
+// console.log(boeing[pilotos])
 
-// getters e setters
-class Post {
-    constructor(titulo, descricao, tags) {
-        this.titulo = titulo
-        this.descricao = descricao
-        this.tags = tags
-    }
+// // getters e setters
+// class Post {
+//     constructor(titulo, descricao, tags) {
+//         this.titulo = titulo
+//         this.descricao = descricao
+//         this.tags = tags
+//     }
 
-    get exibirTitulo() {
-        return `Você esta lendo: ${this.titulo}`
-    }
+//     get exibirTitulo() {
+//         return `Você esta lendo: ${this.titulo}`
+//     }
 
-    set adicionarTags(tags) {
-        const tagsArrays = tags.split(", ")
-        this.tags = tagsArrays
-    }
-}
+//     set adicionarTags(tags) {
+//         const tagsArrays = tags.split(", ")
+//         this.tags = tagsArrays
+//     }
+// }
 
-const myPost = new Post("Algum post", "É um post sobre programação")
+// const myPost = new Post("Algum post", "É um post sobre programação")
 
-console.log(myPost)
+// console.log(myPost)
 
-console.log(myPost.exibirTitulo)
+// console.log(myPost.exibirTitulo)
 
-myPost.adicionarTags = "programação, javascript, js"
+// myPost.adicionarTags = "programação, javascript, js"
 
-console.log(myPost)
+// console.log(myPost)
 
-// herança
-class Mamifero {
-    constructor(patas) {
-        this.patas = patas
-    }
-}
+// // herança
+// class Mamifero {
+//     constructor(patas) {
+//         this.patas = patas
+//     }
+// }
 
-class Lobo extends Mamifero {
-    constructor(patas, nome) {
-        super(patas, patas)
-        this.nome = nome
-    }
-}
+// class Lobo extends Mamifero {
+//     constructor(patas, nome) {
+//         super(patas, patas)
+//         this.nome = nome
+//     }
+// }
 
-const shark = new Lobo(4, "shark")
+// const shark = new Lobo(4, "shark")
 
-console.log(shark)
-console.log(shark.patas)
+// console.log(shark)
+// console.log(shark.patas)
 
-// instaceof
-console.log(shark instanceof Lobo)
+// // instaceof
+// console.log(shark instanceof Lobo)
 
-console.log(Lobo instanceof Mamifero)
+// console.log(Lobo instanceof Mamifero)
 
-console.log(new Lobo(4, "teste") instanceof Mamifero)
+// console.log(new Lobo(4, "teste") instanceof Mamifero)
 
-console.log(new Post("a", "b") instanceof Lobo)
+// console.log(new Post("a", "b") instanceof Lobo)
+
+// 

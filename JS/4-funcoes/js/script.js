@@ -268,19 +268,109 @@
 // console.log(saoAnagramas("listen", "silent"));
 
 // fatorial
-const  calcularFatorial = (n) => {
-    if(n === 0) {
-        return 1
-    }
+// const  calcularFatorial = (n) => {
+//     if(n === 0) {
+//         return 1
+//     }
 
-    let fatorial = n
-    for(let i = n - 1; i > 0; i--) {
-        fatorial = fatorial * i
-    }
+//     let fatorial = n
+//     for(let i = n - 1; i > 0; i--) {
+//         fatorial = fatorial * i
+//     }
 
-    return fatorial
-}
+//     return fatorial
+// }
 
-console.log(calcularFatorial(5))
-console.log(calcularFatorial(0))
-console.log(calcularFatorial(3))
+// console.log(calcularFatorial(5))
+// console.log(calcularFatorial(0))
+// console.log(calcularFatorial(3))
+
+// avaliação final
+
+// desafio avaliativo 1 - Média ponderada
+// const calcularMediaPonderada = (array) => {
+
+//     let soma = 0
+//     let pesos = 0
+    
+//     for(let i = 0; i < array.length; i++) {
+
+//         soma = soma + array[i].nota * array[i].peso
+//         pesos = pesos + array[i].peso
+//     }
+
+//     total = soma / pesos
+
+//     return total
+// }
+
+// console.log(calcularMediaPonderada([
+//     { disciplina: 'Matemática', nota: 8.5, peso: 2 },
+//     { disciplina: 'Português', nota: 7.8, peso: 1 },
+//     { disciplina: 'Ciências', nota: 9.2, peso: 3 }
+//   ]))
+
+// // desafio avaliativo 2 - buscar maior palavra
+// const buscarMaiorPalavra = (palavra) => {
+
+//     const arrayPalavra = palavra.split(" ").sort((a, b) => a.length - b.length)
+//     let palavra1 = [0]
+//     let palavra2 = arrayPalavra[1]
+
+    
+
+//     return arrayPalavra[arrayPalavra.length - 1]
+// }
+
+// console.log(buscarMaiorPalavra("girassol água montanha cachorro livro computador música oceano felicidade viagem"))
+
+// // desafio avaliativo 3 - soma de quadrados
+// const somaDeQuadrados = (n) => {
+
+//     let total = 0
+
+//     for(let i = 1; i <= n; i++) {
+
+//         total = total + i ** 2
+//     }
+
+//     return total
+// }
+
+// console.log(somaDeQuadrados(3))
+
+// // desafio avaliativo 4 - contagem de vogais
+// const contarVogais = (palavra) => {
+
+//     const arrayPalavra = palavra.split("")
+//     let resposta = []
+
+//     for(let i = 0; i < arrayPalavra.length; i++) {
+
+//         if(
+//             arrayPalavra[i] === "a" || arrayPalavra[i] === "A" ||
+//             arrayPalavra[i] === "e" || arrayPalavra[i] === "E" ||
+//             arrayPalavra[i] === "i" || arrayPalavra[i] === "I" ||
+//             arrayPalavra[i] === "o" || arrayPalavra[i] === "O" ||
+//             arrayPalavra[i] === "u" || arrayPalavra[i] === "U"
+//           ) {
+
+//             resposta.push(arrayPalavra[i])
+//         }
+//     }
+
+//     return resposta
+// }
+
+// console.log(contarVogais("Paralelepipedo"));
+
+// // desafio avaliativo 5 - inverter numeros
+// const inverterNumeros = (n) => {
+
+//     const arrayN = n.toString().split("")
+//     const novaN = arrayN.reverse().join("")
+
+//     return novaN
+// }
+
+// console.log(inverterNumeros(123));
