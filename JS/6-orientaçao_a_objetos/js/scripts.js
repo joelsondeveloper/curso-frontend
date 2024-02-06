@@ -261,4 +261,109 @@
 
 // console.log(new Post("a", "b") instanceof Lobo)
 
-// 
+// desafio 1 - sistema de cadastro
+// class pessoas {
+//     constructor(nome, email, senha) {
+//         this.nome = nome
+//         this.email = email
+//         this.senha = senha
+//     }
+
+    
+// }
+
+// let user1 = new pessoas("Joelson", "joelson@email.com", 150106)
+// let user2 = new pessoas("Lidyane", "lidyane@email.com", 123456)
+// let totalPessoas = [user1, user2]
+
+
+// const addPessoas = (nome, email, senha) => {
+
+
+//     let user = new pessoas(nome, email, senha)
+//     totalPessoas.push(user)
+    
+// return `${nome} logado com sucesso`
+// }
+
+
+// const autenticarPessoas = (email, senha) => {
+
+//     for(let i = 0; i < totalPessoas.length; i++) {
+
+//         if(email === totalPessoas[i].email && senha === totalPessoas[i].senha) {
+
+//             return `${totalPessoas[i].nome} logado com sucesso`
+//         }
+//     }
+//     return `usuario não está cadastrado no sistema`
+// }
+
+
+// const listarPessoas = () => {
+
+//     return totalPessoas
+// }
+
+// // adicionar usuarios
+// console.log(addPessoas("Maria", "maria@email.com", 858745));
+
+// // autenticar usuarios
+// console.log(autenticarPessoas("joelson@email.com", 150106));
+
+// // listar usuarios
+// console.log(listarPessoas());
+
+// desafio 2 - carrinho de compras
+class Produto {
+    constructor(nome, preco, estoque) {
+      this.nome = nome;
+      this.preco = preco;
+      this.estoque = estoque;
+    }
+  }
+  class Carrinho {
+    constructor() {
+      this.produtos = [];
+    }
+  
+    adicionarProduto(produto, quantidade) {
+      
+        for(let i = 0; i < produtos.length; i++) {
+
+            if(produto === produtos[i].nome) {
+
+                carrinhoComCompras.push(new Produto(produto, quantidade))
+
+                return carrinhoComCompras
+            }
+        }
+        
+        return 
+    }
+  
+    calcularValorTotal() {
+
+    }
+  
+    exibirCarrinho() {
+      
+    }
+  }
+  
+  const produtos = [
+    new Produto('Arroz', 10.5, 50),
+    new Produto('Feijão', 8.2, 30),
+    new Produto('Macarrão', 5.0, 40),
+    new Produto('Óleo de Soja', 7.8, 20),
+    new Produto('Açúcar', 4.5, 60),
+    new Produto('Café', 12.0, 25),
+    new Produto('Leite', 3.5, 45),
+    new Produto('Tomate', 2.0, 55),
+    new Produto('Banana', 1.8, 75),
+    new Produto('Sabonete', 1.2, 100)
+  ];
+  const carrinhoComCompras = []
+  const carrinho = new Carrinho()
+
+ console.log(carrinho.adicionarProduto("Cuscuz", 2));
