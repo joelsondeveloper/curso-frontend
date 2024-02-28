@@ -311,3 +311,15 @@ const userDetails = {
 const {firstName, lastName, job} = userDetails
 
 console.log(firstName, lastName, job)
+
+// renomear variaveis
+const {firstName: primeiroNome } = userDetails
+
+console.log(firstName)
+
+// destructing com arrays
+const myList = ["avião", "submarino", "carro"]
+
+const [veiculoA, veiculoB, veiculoC] = myList
+
+console.log(veiculoA, veiculoB, veiculoC)
