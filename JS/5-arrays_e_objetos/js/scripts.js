@@ -323,3 +323,32 @@ const myList = ["avião", "submarino", "carro"]
 const [veiculoA, veiculoB, veiculoC] = myList
 
 console.log(veiculoA, veiculoB, veiculoC)
+
+// JSON
+const myJSON = '{"name": "Matheus", "age": 31, "skills": ["PHP", "Javascript", "Python"]}'
+
+// JSON para objeto e objeto para JSON
+
+const myObject = JSON.parse(myJSON)
+
+console.log(myObject)
+
+console.log(myObject.name)
+
+console.log(typeof myObject)
+
+// json invalido
+const badJson = '{"name": Joelson, "age": 31}'
+
+// const myBadObject = JSON.parse(badJson)
+
+myObject.isOpenToWork = true
+
+console.log(myObject)
+
+const myNewJson = JSON.stringify(myObject)
+
+console.log(myNewJson)
+
+console.log(typeof myNewJson)
+
